@@ -1,0 +1,127 @@
+/* Importing google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:ital,wght@0,600;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(to bottom,
+            rgba(16, 213, 65, 1),
+            rgba(18, 65, 74, 0.9)), url('https://images.pexels.com/photos/128867/coins-currency-investment-insurance-128867.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 30px 10px 10px 10px;
+}
+
+header .container.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .logo {
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .nav a {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    transition: all 400ms;
+    text-transform: uppercase;
+}
+
+header .nav a:hover {
+    color: #fc930a;
+    text-shadow: 0px 4px 8px #000;
+}
+
+header .nav .user {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 400ms;
+}
+
+header .nav .admin {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 400ms;
+}
+
+header .nav .user:hover,
+header .nav .admin:hover {
+    transform: scale(1.1);
+}
+
+header .container.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+header .container.hero h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-block: 10px;
+    color: #fff;
+}
+
+header .container.hero .description {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+header .container.hero .btn-register {
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    max-width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+   transition: all 400ms;
+}
+
+header .container.hero .btn-register:hover {
+    color: #fc930a;
+    transform: scale(1.1);
+}
