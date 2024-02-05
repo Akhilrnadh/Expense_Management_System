@@ -98,8 +98,8 @@ header .container.hero h2 {
 
 header .container.hero .description {
     font-size: 16px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-family: 'Intern', sans-serif;
     line-height: 1.7;
     color: #fff;
     margin-bottom: 15px;
