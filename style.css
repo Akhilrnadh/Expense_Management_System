@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -20,7 +21,7 @@ a {
 header {
     background-image: linear-gradient(to bottom,
             rgba(16, 213, 65, 1),
-            rgba(18, 65, 74, 0.9)), url('https://images.pexels.com/photos/128867/coins-currency-investment-insurance-128867.jpeg?auto=compress&cs=tinysrgb&w=600');
+            rgba(18, 65, 74, 0.8)), url('https://images.pexels.com/photos/128867/coins-currency-investment-insurance-128867.jpeg?auto=compress&cs=tinysrgb&w=600');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,27 +58,30 @@ header .nav a {
 
 header .nav a:hover {
     color: #fc930a;
-    text-shadow: 0px 4px 8px #000;
+    text-shadow: 0px 4px 16px #000;
 }
 
 header .nav .user {
     background-color: #333;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
     transition: all 400ms;
+    display: flex;
 }
 
 header .nav .admin {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
     transition: all 400ms;
+    display: flex;
 }
 
 header .nav .user:hover,
 header .nav .admin:hover {
     transform: scale(1.1);
+    text-shadow: unset;
 }
 
 header .container.hero {
@@ -108,10 +112,13 @@ header .container.hero .description {
 
 header .container.hero .btn-register {
     color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     background-color: #000;
-    padding: 10px;
+    padding: 10px 60px;
     max-width: 110px;
     display: flex;
+    gap: 5px;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
@@ -125,3 +132,185 @@ header .container.hero .btn-register:hover {
     color: #fc930a;
     transform: scale(1.1);
 }
+
+/* end of index hero section  */
+
+/* header2 css code starts here  */
+.header2 {
+    background-image: linear-gradient(to right,
+            rgba(16, 213, 65, 1),
+            rgba(18, 65, 74, 0.8));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 200;
+}
+
+.header2 .container.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header2 .container .logo {
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.header2 .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header2 .nav a {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    transition: all 400ms;
+    text-transform: uppercase;
+}
+
+.header2 .nav a:hover {
+    color: #fc930a;
+    text-shadow: 0px 4px 16px #000;
+}
+
+.header2 .nav .user {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 400ms;
+    display: flex;
+}
+
+.header2 .nav .admin {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 400ms;
+    display: flex;
+}
+
+.header2 .nav .user:hover,
+.header2 .nav .admin:hover {
+    transform: scale(1.1);
+    text-shadow: unset;
+}
+
+/* end of header2  */
+
+
+/* registation page css starts here  */
+.main.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 90px;
+}
+
+.main .expensify-registerForm {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.main .expensify-registerForm h2 {
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.expensify-registerForm form .form-control {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.expensify-registerForm form .form-control input{
+    height: 35px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    outline: none;
+}
+
+.expensify-registerForm form .form-control input:focus {
+   border: 1px solid rgba(16, 213, 65, 1);
+}
+
+.expensify-registerForm form .form-control i {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    height: 100%;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expensify-registerForm form .expensify-registerBtn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: auto;
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+.expensify-registerForm form .expensify-registerBtn:hover {
+    background: linear-gradient(to right,
+    #10d541,
+    #12414acc);
+}
+
+.expensify-registerForm form .expensify-registerBtn i {
+    font-size: 19px;
+}
+
+.expensify-registerForm form .expensify-loginAlert {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.expensify-registerForm form .expensify-loginAlert a{
+    display: inline;
+    color: #12414acc;
+}
+
+.expensify-registerForm form .expensify-loginAlert a:hover {
+    color: #10d541;
+}
+
+/* registration form css ends here  */
+

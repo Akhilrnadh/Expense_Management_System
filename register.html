@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Expense Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- remix icon cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="header2">
+        <div class="container nav">
+            <div class="logo">LOGO</div>
+            <div class="nav">
+                <a href="/index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#" class="user"><i class="ri-user-line"></i>User</a>
+                <a href="#" class="admin"><i class="ri-user-line"></i>Admin</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- registration form starts here  -->
+    <div class="main container">
+        <div class="expensify-registerForm">
+            <h2>Register as a User</h2>
+            <form action="#">
+                <div class="form-control">
+                    <label for="#">Enter Your Name</label>
+                    <input type="text" placeholder="Your Name" autocomplete="off" required>
+                    <i class="ri-user-line"></i>
+                </div>
+                <div class="form-control">
+                    <label for="#">Enter Your Email</label>
+                    <input type="email" placeholder="Your email" autocomplete="off" required>
+                    <i class="ri-mail-line"></i>
+                </div>
+                <div class="form-control">
+                    <label for="#">Enter Your Phone Number</label>
+                    <input type="number" placeholder="Your Phone Number" autocomplete="off" required>
+                    <i class="ri-phone-line"></i>
+                </div>
+                <div class="form-control">
+                    <label for="#">Enter Your Password</label>
+                    <input type="password" placeholder="Password" autocomplete="off" required>
+                    <i class="ri-eye-off-line"></i>
+                </div>
+                <div class="form-control">
+                    <label for="#">Confirm Password</label>
+                    <input type="Password" placeholder="Confirm Password" autocomplete="off" required>
+                    <i class="ri-eye-off-line"></i>
+                </div>
+                <button class="expensify-registerBtn" type="button" name="register" value="submit">Regsiter <i
+                        class="ri-login-circle-line"></i></button>
+                <p class="expensify-loginAlert">Already Have and account? <a href="login.html">Login Here</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- end of form registration  -->
+
+</body>
+
+</html>
